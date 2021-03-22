@@ -4,6 +4,7 @@ import App from '../components/App';
 import { headData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
+import '../il8n';
 
 export default () => {
   const { title, lang, description } = headData;
