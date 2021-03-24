@@ -31,7 +31,14 @@ const Header = () => {
     <section id="hero" className="jumbotron">
       <Container>
       <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px"> 
-      <button onClick={() => changeLanguage('jp')}>JP</button>
+        <div className="lang">
+        <span className="cta-btn cta-btn--hero">
+          <a onClick={() => changeLanguage('en')}>EN</a>
+        </span>
+        <span className="cta-btn cta-btn--hero">
+          <a onClick={() => changeLanguage('jp')}>JP</a>
+        </span>
+        </div>
       </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">

@@ -9,7 +9,7 @@
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 0px;
@@ -21,14 +21,29 @@
   }
 }
 
+/* Toggle Language */
+.lang {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
 /* Hero Style */
 .cta-btn--hero {
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-width: 2px;
   border-style: solid;
-  border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  border-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
   border-image-slice: 1;
   cursor: pointer;
   // Responsive Button hero style
@@ -39,7 +54,11 @@
   }
 
   &::after {
-    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    background-image: linear-gradient(
+      135deg,
+      $primary-color 0%,
+      $secondary-color 100%
+    );
     // Responsive Button hero style
     @include respond(phone) {
       background-image: none;
