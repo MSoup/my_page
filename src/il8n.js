@@ -3,27 +3,27 @@
 const resources = {
   en: {
     translation: {
-      'Welcome to React': 'Welcome to React and react-i18next',
+      "Welcome to React": "Welcome to React and react-i18next",
     },
   },
-  fr: {
+  jp: {
     translation: {
-      'Welcome to React': 'Bienvenue à React et react-i18next',
+      "Welcome to React": "Reactへようこそ",
     },
   },
 };
 
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
 
-import LanguageDetector from 'i18next-browser-languagedetector';
+import LanguageDetector from "i18next-browser-languagedetector";
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: "en",
     debug: true,
 
     interpolation: {
